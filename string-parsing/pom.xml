@@ -1,0 +1,76 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.zahid</groupId>
+  <artifactId>datatype-operator-expression</artifactId>
+  <packaging>jar</packaging>
+  <version>1.0-SNAPSHOT</version>
+  <name>learning-java</name>
+  <url>http://maven.apache.org</url>
+  
+  <!-- # Java Version, JUnit5 Version, UTF-8 Encoding --> 
+  <properties>
+    <maven.compiler.target>11</maven.compiler.target>
+    <maven.compiler.source>11</maven.compiler.source>
+    <junit.jupiter.version>5.8.1</junit.jupiter.version>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <!-- <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding> -->
+  </properties>
+
+  <build>
+    <pluginManagement>
+      <plugins>
+      
+	      <!-- # maven exec plugin for running main with custom configuration -->
+        <plugin>
+            <groupId>org.codehaus.mojo</groupId>
+            <artifactId>exec-maven-plugin</artifactId>
+            <version>3.0.0</version>
+            <configuration>
+                <mainClass>com.zahid.Main</mainClass>
+                <mainClass>com.zahid.stringbuffer.StringBufferTest1</mainClass>
+                <mainClass>com.zahid.stringbuffer.StringBufferTest2</mainClass>
+                <mainClass>com.zahid.stringbuffer.StringBufferTest3</mainClass>
+                <mainClass>com.zahid.stringbuffer.StringBufferTest4</mainClass>
+                <mainClass>com.zahid.stringbuilder.StringBuilderTest</mainClass>
+                <mainClass>com.zahid.stringmethod.StringEquality</mainClass>
+                <mainClass>com.zahid.stringmethod.StringMethod1</mainClass>
+                <mainClass>com.zahid.stringmethod.StringMethod2</mainClass>
+                <mainClass>com.zahid.stringmethod.StringMethod3</mainClass>
+                <mainClass>com.zahid.stringmethod.StringMethod4</mainClass>
+                <mainClass>com.zahid.stringmethod.StringModification</mainClass>
+                <mainClass>com.zahid.stringmethod.StringOperation1</mainClass>
+                <mainClass>com.zahid.stringmethod.StringOperation2</mainClass>
+                <mainClass>com.zahid.stringmethod.StringParser</mainClass>
+                <mainClass>com.zahid.stringmethod.StringPool</mainClass>
+            </configuration>
+        </plugin>      
+        
+        <!-- # Maven Surefire Plugin for JUnit5 --> 
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-surefire-plugin</artifactId>
+          <version>3.0.0-M5</version>
+	    </plugin>
+      </plugins> 
+    </pluginManagement>
+  </build>
+
+  <dependencies>
+    <!-- # Dependency for JUnit5 -->
+    <dependency>
+        <groupId>org.junit.jupiter</groupId>
+        <artifactId>junit-jupiter-engine</artifactId>
+        <version>${junit.jupiter.version}</version>
+        <scope>test</scope>
+    </dependency>
+    
+    <!-- https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-api -->
+    <dependency>
+        <groupId>org.junit.jupiter</groupId>
+        <artifactId>junit-jupiter-api</artifactId>
+        <version>${junit.jupiter.version}</version>
+        <scope>test</scope>
+    </dependency>  
+  </dependencies>
+</project>

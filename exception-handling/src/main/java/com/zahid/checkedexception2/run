@@ -1,0 +1,18 @@
+#!/usr/bin/bash
+
+current_path=$(pwd)
+if [[ ! -d bin/ ]]
+then
+	$(mkdir bin/)
+fi
+
+cd src
+src_file=$(find . -type f -name "Main.java")
+javac -d "$current_path/bin" $src_file # compiling source file & putting compiled binary iles in {root}/bin directory 
+
+main_class=$(grep -wrP "package*" $src_file | awk '{print $NF}' | sed 's/;/.Main/g') # extracting package name
+
+echo $main_class
+
+java -cp "$current_path/bin" com.zahid.Main # executing compiles binary files from the {root}/bin directory
+cd $current_path
