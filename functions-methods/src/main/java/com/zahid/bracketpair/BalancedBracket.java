@@ -3,6 +3,7 @@ import java.util.Stack;
 
 public class BalancedBracket {
     public static boolean isBalanced(String expression) {
+        
         Stack<Character> stack = new Stack<>();
         char[] chars = expression.toCharArray();
 

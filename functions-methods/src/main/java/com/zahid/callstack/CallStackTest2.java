@@ -1,6 +1,6 @@
 package com.zahid.callstack;
 
-public class CallStackDemo {
+public class CallStackTest2 {
     public static void main(String[] args) {
         System.out.println("Inside Main method");
         methodA();
@@ -28,7 +28,11 @@ public class CallStackDemo {
     public static void methodD()
     {
         System.out.println("Inside method D");
-        System.out.println(5/0);
+        try {
+            System.out.println(5/0);
+        } catch (ArithmeticException e) {
+            System.err.println("Cannot divide by zero. " + e);
+        }
         System.out.println("Exit ing method D");
     }
 }

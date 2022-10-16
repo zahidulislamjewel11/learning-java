@@ -28,17 +28,17 @@
             <version>3.0.0</version>
             <configuration>
                 <mainClass>com.zahid.Main</mainClass>
-                <mainClass>com.zahid.accessmodifier.package1.Access2</mainClass>
-                <mainClass>com.zahid.accessmodifier.package2.Access3</mainClass>
                 <mainClass>com.zahid.inputparser.InputParser</mainClass>
                 <mainClass>com.zahid.mainmethod.MainTest</mainClass>
-                <mainClass>com.zahid.packagedemo.main.Main</mainClass>
                 <mainClass>com.zahid.relop.RelationalOperator</mainClass>
-                <mainClass>com.zahid.staticvariable.StaticTest</mainClass>
                 <mainClass>com.zahid.typecasting.TypeCastTest</mainClass>
                 <mainClass>com.zahid.userinput.UserInputTest</mainClass>
                 <mainClass>com.zahid.variable.VariableExample</mainClass>
-            </configuration>
+                <mainClass>com.zahid.staticvariable.StaticTest</mainClass>
+                <mainClass>com.zahid.packagedemo.main.Main</mainClass>
+                <mainClass>com.zahid.accessmodifier.package1.Access2</mainClass>
+                <mainClass>com.zahid.accessmodifier.package2.Access3</mainClass>
+              </configuration>
         </plugin>      
         
         <!-- # Maven Surefire Plugin for JUnit5 --> 

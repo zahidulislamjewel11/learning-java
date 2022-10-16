@@ -10,12 +10,12 @@ public class UserInputTest {
 		
 		do
 		{
-			System.out.println("Enter a line> ");
+			System.out.println("Enter a line: ");
 			String line = scan.nextLine();
 			System.out.println("You've entered: "+line);
 			if("quit".equals(line))
 			{
-				okay=false;
+				okay = false;
 			}
 			
 		} while(okay);

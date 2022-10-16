@@ -28,8 +28,9 @@
             <version>3.0.0</version>
             <configuration>
                 <mainClass>com.zahid.Main</mainClass>
+                <mainClass>com.zahid.callstack.CallStackTest1</mainClass>
+                <mainClass>com.zahid.callstack.CallStackTest2</mainClass>
                 <mainClass>com.zahid.bracketpair.BalancedBracketTest</mainClass>
-                <mainClass>com.zahid.callstack.CallStackDemo</mainClass>
             </configuration>
         </plugin>      
         

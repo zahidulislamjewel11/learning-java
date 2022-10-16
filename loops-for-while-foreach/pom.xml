@@ -28,13 +28,13 @@
             <version>3.0.0</version>
             <configuration>
                 <mainClass>com.zahid.Main</mainClass>
-                <mainClass>com.zahid.dowhile.LoopTest</mainClass>
-                <mainClass>com.zahid.foreachloop.ForEachTest</mainClass>
                 <mainClass>com.zahid.forunicode.UnicodeTest1</mainClass>
                 <mainClass>com.zahid.forunicode.UnicodeTest2</mainClass>
                 <mainClass>com.zahid.leapyear.LeapYear</mainClass>
                 <mainClass>com.zahid.logtable.LogTable</mainClass>
-            </configuration>
+                <mainClass>com.zahid.dowhile.LoopTest</mainClass>
+                <mainClass>com.zahid.foreachloop.ForEachTest</mainClass>
+              </configuration>
         </plugin>      
         
         <!-- # Maven Surefire Plugin for JUnit5 --> 

@@ -1,14 +1,14 @@
 package com.zahid.rotation;
-public class ArrayRotation {
+public class ArrayRotation1 {
 
-    public static void print_array(int[] arr) {
+    public static void printArray(int[] arr) {
         for (int i = 0; i < arr.length; i++) {
             System.out.print(arr[i]+" ");
         }
         System.out.println();
     }
 
-    public static void left_rotate(int[] arr) {
+    public static void leftRotate(int[] arr) {
         int n = arr.length;
         int[] t = new int[n];
 
@@ -16,11 +16,10 @@ public class ArrayRotation {
             t[i] = arr[(i+1) % n];
         }
         System.out.println("Left Rotation:");
-        print_array(t);
+        printArray(t);
     }
 
-
-    public static void right_rotate(int[] arr) {
+    public static void rightRotate(int[] arr) {
         int n = arr.length;
         int[] t = new int[n];
 
@@ -28,13 +27,13 @@ public class ArrayRotation {
             t[(i+1) % n] = arr[i];
         }
         System.out.println("Right Rotation:");
-        print_array(t);
+        printArray(t);
     }
 
     public static void main(String[] args) {
         int[] arr = {4, 9, 2, 3, 5, 7, 8, 1, 6, 0};
-        print_array(arr);
-        left_rotate(arr);
-        right_rotate(arr);
+        printArray(arr);
+        leftRotate(arr);
+        rightRotate(arr);
     }
 }

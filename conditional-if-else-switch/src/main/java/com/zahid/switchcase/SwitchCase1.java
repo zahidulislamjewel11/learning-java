@@ -5,12 +5,11 @@ import java.util.Scanner;
 public class SwitchCase1 {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		
 		int day;
 		Scanner scan = new Scanner(System.in);
 		
-		System.out.print("Enter a weekday> ");
+		System.out.print("Enter a weekday: ");
 		day = scan.nextInt();
 		
 		switch(day)
@@ -39,6 +38,8 @@ public class SwitchCase1 {
 		default:
 			System.out.println("Invalid day");
 		}
+
+		scan.close();
 	}
 
 }

@@ -8,8 +8,8 @@ public class SwitchCase2 {
         System.out.print("Enter a character> ");
         Scanner sc = new Scanner(System.in);
         ch = sc.nextLine();
-/*
-        if(ch.equals("A"))
+
+/*         if(ch.equals("A"))
             System.out.printf("%s is vowel", ch);
         else if(ch.equals("a"))
             System.out.printf("%s is vowel", ch);
@@ -35,9 +35,8 @@ public class SwitchCase2 {
             System.out.printf("%s is vowel", ch);
 
         else
-            System.out.printf("%s is NOT vowel", ch);
+            System.out.printf("%s is NOT vowel", ch); */
 
- */
         switch (ch)
         {
             case "A":
@@ -54,5 +53,7 @@ public class SwitchCase2 {
             default:
                 System.out.printf("%s is NOT vowel\n", ch);
         }
+
+        sc.close();
     }
 }

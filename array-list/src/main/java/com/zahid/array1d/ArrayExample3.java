@@ -6,11 +6,11 @@ public class ArrayExample3 {
 
 	public static void main(String[] args) {
 		String[] fruits = new String[3];
-		fruits[0]="Mango";
-		fruits[1]="Apple";
-		fruits[2]="Strawberry";
+		fruits[0] = "Mango";
+		fruits[1] = "Apple";
+		fruits[2] = "Strawberry";
 		
-		for(int i=0;i<fruits.length;i++)
+		for(int i = 0; i < fruits.length; i++)
 		{
 			System.out.println(fruits[i]);
 		}
@@ -21,7 +21,7 @@ public class ArrayExample3 {
 		fruitList.add("Apple");
 		fruitList.add("Banana");
 		
-		for(int i=0;i<fruitList.size();i++)
+		for(int i=0; i<fruitList.size(); i++)
 		{
 			System.out.println(fruitList.get(i));
 		}

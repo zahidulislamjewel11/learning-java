@@ -31,12 +31,12 @@
                 <mainClass>com.zahid.array1d.ArrayExample2</mainClass>
                 <mainClass>com.zahid.array1d.ArrayExample3</mainClass>
                 <mainClass>com.zahid.array1d.ArrayExample4</mainClass>
-                <mainClass>com.zahid.array1d.ArrayExample4</mainClass>
                 <mainClass>com.zahid.array2d.ArrayForEach</mainClass>
                 <mainClass>com.zahid.array2d.ArrayMatrix</mainClass>
-                <mainClass>com.zahid.rotation.ArrayRotation</mainClass>
-                <mainClass>com.zahid.sorting.ArraySorting</mainClass>
+                <mainClass>com.zahid.rotation.ArrayRotation2</mainClass>
+                <mainClass>com.zahid.rotation.ArrayRotation1</mainClass>
                 <mainClass>com.zahid.vector.VectorList</mainClass>
+                <mainClass>com.zahid.sorting.ArraySorting</mainClass>
             </configuration>
         </plugin>      
         
@@ -51,6 +51,14 @@
   </build>
 
   <dependencies>
+    
+    <!-- https://mvnrepository.com/artifact/com.google.guava/guava -->
+    <dependency>
+      <groupId>com.google.guava</groupId>
+      <artifactId>guava</artifactId>
+      <version>31.1-jre</version>
+    </dependency>
+
     <!-- # Dependency for JUnit5 -->
     <dependency>
         <groupId>org.junit.jupiter</groupId>
