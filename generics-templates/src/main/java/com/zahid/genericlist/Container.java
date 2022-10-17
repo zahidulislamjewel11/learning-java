@@ -28,7 +28,7 @@ public class Container<T> {
     {
         if(index > MAX_LENGTH)
         {
-//            throw new IllegalArgumentException("Index cannot be larger than MAX_LENGTH");
+            // throw new IllegalArgumentException("Index cannot be larger than MAX_LENGTH");
             throw new ArrayIndexOutOfBoundsException("Index cannot be larger than MAX_LENGTH");
         }
         else
@@ -37,18 +37,27 @@ public class Container<T> {
         }
     }
 
-//    public void printAll()
-//    {
-//        for(T item: items)
-//        {
-//            System.out.print(item+" ");
-//        }
-//    }
+    // public void printAll()
+    // {
+    //     for(T item: items)
+    //     {
+    //         System.out.print(item+" ");
+    //     }
+    // }
+
     public void printAll()
     {
-        for(int i=0; i<currentIndex; i++)
+        System.out.print("[");
+        for(int i = 0; i < currentIndex; i++)
         {
-            System.out.print(items[i]+" ");
+            if(i < currentIndex - 1) {
+                System.out.print(items[i]+",");
+            }
+            else if(i == currentIndex - 1) {
+                System.out.print(items[i]);
+            }
         }
+        System.out.print("]");
+        System.out.println();
     }
 }

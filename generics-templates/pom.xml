@@ -28,11 +28,11 @@
             <version>3.0.0</version>
             <configuration>
                 <mainClass>com.zahid.Main</mainClass>
-                <mainClass>com.zahid.genericarray.ContainerTest</mainClass>
-                <mainClass>com.zahid.genericfi.FunctionalIterfaceTest</mainClass>
                 <mainClass>com.zahid.genericlist.ContainerTest</mainClass>
+                <mainClass>com.zahid.genericarray.ContainerTest</mainClass>
                 <mainClass>com.zahid.genericobject.GenericTest</mainClass>
                 <mainClass>com.zahid.genericpair.ContainerTest</mainClass>
+                <mainClass>com.zahid.genericfi.FunctionalIterfaceTest</mainClass>
                 <mainClass>com.zahid.generictuple.TupleTest</mainClass>
             </configuration>
         </plugin>      

@@ -10,7 +10,8 @@ public class ContainerTest {
 
         System.out.println();
         System.out.println(container.getItem(0));
-//        System.out.println(container.getItem(10));
+        System.out.println(container.getItem(5));
+        // System.out.println(container.getItem(10)); // java.lang.ArrayIndexOutOfBoundsException: Index 10 out of bounds for length 10
 
         Container<String> str = new Container<String>();
         str.addItem("Alex");

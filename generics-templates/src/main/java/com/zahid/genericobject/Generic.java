@@ -13,6 +13,6 @@ public class Generic<T> {
 
     public void showType()
     {
-        System.out.println("Type of T is: "+obj.getClass().getName());
+        System.out.println("Type of T is: " + obj.getClass().getName());
     }
 }

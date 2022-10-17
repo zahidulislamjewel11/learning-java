@@ -27,9 +27,9 @@ public class Container<T1, T2> {
 
     public void printItems()
     {
-        System.out.println("Printing Contents of container");
-        System.out.println("Item 1: "+item1);
-        System.out.println("Item 2: "+item2);
+        // System.out.println("Printing Contents of container");
+        System.out.println("Item 1: " + item1);
+        System.out.println("Item 2: " + item2);
     }
 }
 

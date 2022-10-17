@@ -19,7 +19,7 @@ public class Tuple<X, Y> {
 
     public void showType()
     {
-        System.out.println("Type of X is: "+a.getClass().getName()+" and value: "+a);
-        System.out.println("Type of Y is: "+b.getClass().getName()+" and value: "+b);
+        System.out.println("Type of X is: " + a.getClass().getName() + " and value: " + a);
+        System.out.println("Type of Y is: " + b.getClass().getName() + " and value: " + b);
     }
 }

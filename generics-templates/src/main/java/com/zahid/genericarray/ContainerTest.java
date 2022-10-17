@@ -17,7 +17,9 @@ public class ContainerTest {
         integerContainer.addItem(1);
         integerContainer.addItem(6);
         integerContainer.addItem(0);
-        // integerContainer.addItem(-1);
+        // integerContainer.addItem(-1); // java.lang.ArrayIndexOutOfBoundsException: Index 10 out of bounds for length 10
+
+        integerContainer.printAllItems();
 
         integerContainer.removeItem(4);
         integerContainer.removeItem(9);
@@ -35,6 +37,7 @@ public class ContainerTest {
         stringContainer.addItem("Robi");
 
         System.out.println(stringContainer.getLength());
+        System.out.println(stringContainer.hashCode());
         stringContainer.printAllItems();
 
         // Container<Object> objectContainer = stringContainer; // autoboxing error

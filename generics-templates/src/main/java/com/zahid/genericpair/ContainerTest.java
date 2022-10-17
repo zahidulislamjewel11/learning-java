@@ -6,7 +6,7 @@ import java.util.Set;
 
 public class ContainerTest {
     public static void main(String[] args) {
-        //    EXAMPLE - 1
+        // EXAMPLE - 1
         ArrayList<String> myList = new ArrayList<String>();
         myList.add("Hello");
         // myList.add(100); // not okay
