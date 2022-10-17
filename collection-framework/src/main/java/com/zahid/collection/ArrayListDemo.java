@@ -5,6 +5,9 @@ import java.util.Arrays;
 // import java.util.Collection;
 import java.util.List;
 import java.util.stream.Collectors;
+import java.util.stream.IntStream;
+
+import com.google.common.primitives.Ints;
 
 // import lombok.Cleanup;
 /**
@@ -33,8 +36,12 @@ public class ArrayListDemo {
         numList.addAll(Arrays.asList(7, 8, 1, 6, 0));
         System.out.println(numList);
         int[] primeNumbers = {11, 13, 17, 19};
-        List<Integer> primeList = Arrays.stream(primeNumbers).boxed().collect(Collectors.toList());
-        numList.addAll(primeList);
+
+        // List<Integer> primeList = Arrays.stream(primeNumbers).boxed().collect(Collectors.toList());
+        // List<Integer> primeList = IntStream.of(primeNumbers).boxed().collect(Collectors.toList());
+        List<Integer> primeList = Ints.asList(primeNumbers); // using google guava collection framework
+
+        numList.addAll(primeList); // appending primeList at the end of the numList
         System.out.println(numList);
         System.out.println(numList.size());
 

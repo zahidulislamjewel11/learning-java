@@ -19,7 +19,7 @@ public class ListExample {
 
         System.out.println(myList);
 
-//        Object obj = myList.get(1);
+        // Object obj = myList.get(1);
         Object obj = (String) myList.get(1);
 
         System.out.println(obj);
@@ -32,7 +32,7 @@ public class ListExample {
 
         Iterator<String> it = myList.iterator();
         while (it.hasNext()) {
-//            System.out.println(it.next());
+            // System.out.println(it.next());
 
             Object next = it.next();
             System.out.println(next);
@@ -46,7 +46,7 @@ public class ListExample {
         System.out.println();
 
         // iterating using for loop
-        for(int i=0;i< myList.size();i++) {
+        for(int i=0; i < myList.size(); i++) {
             Object next = myList.get(i);
             System.out.println(next);
         }

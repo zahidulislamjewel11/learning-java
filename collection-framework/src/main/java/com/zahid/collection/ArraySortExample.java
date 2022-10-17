@@ -18,6 +18,7 @@ public class ArraySortExample {
         for(int i=0; i<array.length; i++) {
             array[i] = random.nextInt(100) + 1;
         }
+
         System.out.println(Arrays.toString(array));
         Arrays.sort(array);
         System.out.println(Arrays.toString(array));
@@ -46,19 +47,34 @@ public class ArraySortExample {
             new Student("Jim"),
             new Student("Attenborough"),
         };
-
         System.out.println(Arrays.toString(studentList));
         
-        // Arrays.sort(studentList);
+        Arrays.sort(studentList);
+        System.out.println(Arrays.toString(studentList));
 
-        // using anonymous inner class & cpmparator
+        // using anonymous inner class & comparator
         Arrays.sort(studentList, new Comparator<Student>(){
             @Override 
             public int compare(Student s1, Student s2) {
-                return s1.getName().compareTo(s2.getName());
+                return s1.getName().compareTo(s2.getName()); // lexicographically
             }
         });
-        // Arrays.sort(studentList, (s1,s2) -> s1.compareTo(s2)); // using lambda
+        System.out.println(Arrays.toString(studentList));
+
+        Arrays.sort(studentList, new Comparator<Student>() {
+
+            @Override
+            public int compare(Student s1, Student s2) {
+                return s1.getName().length() - s2.getName().length();
+            }
+            
+        });
+        System.out.println(Arrays.toString(studentList));
+
+        Arrays.sort(studentList, (s1,s2) -> s1.compareTo(s2)); // using lambda
+        System.out.println(Arrays.toString(studentList));
+
+        Arrays.sort(studentList, (s1,s2) -> s1.getName().length() - s2.getName().length()); // using lambda
         System.out.println(Arrays.toString(studentList));
 
     }

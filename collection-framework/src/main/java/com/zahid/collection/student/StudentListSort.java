@@ -29,10 +29,13 @@ public class StudentListSort {
             }
             
         });
+        System.out.println(studentList);
 
         // using lambda function
-        Collections.sort(studentList, (s1, s2) -> s1.getName().compareTo(s2.getName()));
+        Collections.sort(studentList, (s1, s2) -> s1.getName().compareTo(s2.getName())); // lexicographically
+        System.out.println(studentList);
 
+        Collections.sort(studentList, (s1, s2) -> s1.getName().length() - s2.getName().length()); // by length
         System.out.println(studentList);
         
     }

@@ -18,7 +18,7 @@ public class SortPersonList {
         personList.add(new Person("Jane", 25));
 
         System.out.println(personList);
-        Collections.sort(personList);
+        Collections.sort(personList); // sort by age defined in compareTo()
         System.out.println(personList);
         
         for(Person person: personList) {

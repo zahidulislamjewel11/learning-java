@@ -17,5 +17,13 @@ public class PersonPriorityQueue {
         for(Person person: personQueue) {
             System.out.println(person);
         }
+        System.out.println();
+
+        while (!personQueue.isEmpty()) {
+            Person person = personQueue.peek();
+            System.out.println(person);
+            personQueue.poll();
+        }
+
     }
 }

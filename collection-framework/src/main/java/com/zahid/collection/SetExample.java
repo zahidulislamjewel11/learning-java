@@ -5,8 +5,8 @@ import java.util.stream.Stream;
 
 public class SetExample {
     public static void main(String[] args) {
-//        Set set = new HashSet();
-//        Set set2 = new TreeSet();
+        // Set set = new HashSet();
+        // Set set2 = new TreeSet();
 
         Set<String> s = new HashSet<>();
 
@@ -27,7 +27,7 @@ public class SetExample {
 
         Iterator<String> iterator = s2.iterator();
         while (iterator.hasNext()) {
-//            System.out.println(iterator.next());
+            // System.out.println(iterator.next());
 
             String next = iterator.next();
             System.out.println(next);
@@ -52,7 +52,7 @@ public class SetExample {
         System.out.println("Using Iterator class");
         Iterator<Integer> iter = numbers.iterator();
         while (iter.hasNext()) {
-//            System.out.println(iter.next());
+            // System.out.println(iter.next());
 
             Integer num = iter.next();
             System.out.println(num);

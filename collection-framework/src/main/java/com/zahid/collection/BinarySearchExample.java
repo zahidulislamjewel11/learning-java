@@ -25,7 +25,7 @@ public class BinarySearchExample {
         System.out.println(studentList);
 
         // int index = Collections.binarySearch(studentList, new Student("Alex"));
-        int index = Collections.binarySearch(studentList, new Student("David"));
+        int index = Collections.binarySearch(studentList, new Student("David")); // list has to be sorted
 
         if(index != -1) {
             System.out.println("Found at index " + index);
@@ -44,7 +44,7 @@ public class BinarySearchExample {
         int position = Arrays.binarySearch(numList, key);
 
         if(position != -1) {
-            System.out.println("Found at index "+position);
+            System.out.println("Found at index " + position);
         } else {
             System.out.println("Not found");
         }

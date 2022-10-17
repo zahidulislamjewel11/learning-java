@@ -16,6 +16,15 @@ public class Student implements Comparable<Student>, Comparator<Student> {
         this.name = name;
     }
     
+    
+    public String getName() {
+        return name;
+    }
+    
+    public void setName(String name) {
+        this.name = name;
+    }
+    
     // @Override
     // public int compareTo(Student other) {
     //     int len1 = this.name.length();
@@ -38,15 +47,7 @@ public class Student implements Comparable<Student>, Comparator<Student> {
         
     //     return len1 - len2;
     // }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
+    
     // for comparable interface
     @Override
     public int compareTo(Student other) {

@@ -11,7 +11,7 @@ public class PersonTreeSet {
         Person p4 = new Person("Hasan", 24);
         Person p5 = new Person("Robi", 21);
 
-        Set<Person> personSet = new TreeSet<>();
+        Set<Person> personSet = new TreeSet<>(); // implemented by red-black-tree
         personSet.add(p1);
         personSet.add(p2);
         personSet.add(p3);

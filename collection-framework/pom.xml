@@ -28,27 +28,33 @@
             <version>3.0.0</version>
             <configuration>
                 <mainClass>com.zahid.Main</mainClass>
-                <mainClass>com.zahid.collection.ArrayListDemo</mainClass>
-                <mainClass>com.zahid.collection.ArraySortExample</mainClass>
-                <mainClass>com.zahid.collection.BinarySearchExample</mainClass>
-                <mainClass>com.zahid.collection.HashMapExample</mainClass>
-                <mainClass>com.zahid.collection.HashSetExample</mainClass>
-                <mainClass>com.zahid.collection.LinkedHashSetExample</mainClass>
-                <mainClass>com.zahid.collection.LinkedListDemo</mainClass>
-                <mainClass>com.zahid.collection.ListConversion</mainClass>
-                <mainClass>com.zahid.collection.ListExample</mainClass>
-                <mainClass>com.zahid.collection.SetExample</mainClass>
-                <mainClass>com.zahid.collection.SortListExample</mainClass>
-                <mainClass>com.zahid.collection.SortPersonList</mainClass>
-                <mainClass>com.zahid.collection.StackDemo</mainClass>
-                <mainClass>com.zahid.collection.TreeMapExample</mainClass>
-                <mainClass>com.zahid.collection.TreeSetExample</mainClass>
-                <mainClass>com.zahid.collection.VectorDemo</mainClass>
-
+                
                 <mainClass>com.zahid.tweetcollection.Main</mainClass>
                 <mainClass>com.zahid.tweetnormal.Main</mainClass>
                 <mainClass>com.zahid.twitterapi.Main</mainClass>
-            </configuration>
+                
+                <mainClass>com.zahid.collection.person.PersonPriorityQueue</mainClass>
+                <mainClass>com.zahid.collection.person.PersonTreeSet</mainClass>
+                <mainClass>com.zahid.collection.student.StudentListSort</mainClass>
+                
+                <mainClass>com.zahid.collection.ArrayListDemo</mainClass>
+                <mainClass>com.zahid.collection.ArraySortExample</mainClass>
+                <mainClass>com.zahid.collection.BinarySearchExample</mainClass>
+                <mainClass>com.zahid.collection.HashSetExample</mainClass>
+                <mainClass>com.zahid.collection.HashMapExample</mainClass>
+                <mainClass>com.zahid.collection.TreeSetExample</mainClass>
+                <mainClass>com.zahid.collection.TreeMapExample</mainClass>
+                <mainClass>com.zahid.collection.LinkedHashSetExample</mainClass>
+                <mainClass>com.zahid.collection.LinkedListDemo</mainClass>
+                <mainClass>com.zahid.collection.ListExample</mainClass>
+                <mainClass>com.zahid.collection.ListConversion</mainClass>
+                <mainClass>com.zahid.collection.SetExample</mainClass>
+                <mainClass>com.zahid.collection.SortListExample</mainClass>
+                <mainClass>com.zahid.collection.SortPersonList</mainClass>
+                <mainClass>com.zahid.collection.VectorDemo</mainClass>
+                <mainClass>com.zahid.collection.StackDemo</mainClass>
+                <mainClass>com.zahid.collection.QueueTest</mainClass>
+              </configuration>
         </plugin>      
         
         <!-- # Maven Surefire Plugin for JUnit5 --> 
@@ -62,6 +68,13 @@
   </build>
 
   <dependencies>
+    <!-- https://mvnrepository.com/artifact/com.google.guava/guava -->
+    <dependency>
+      <groupId>com.google.guava</groupId>
+      <artifactId>guava</artifactId>
+      <version>31.1-jre</version>
+    </dependency>
+
     <!-- # Dependency for JUnit5 -->
     <dependency>
         <groupId>org.junit.jupiter</groupId>

@@ -1,6 +1,7 @@
 package com.zahid.collection;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
@@ -18,10 +19,19 @@ public class SortListExample {
         numList.add(6);
         numList.add(0);
 
-        System.out.println(numList);    
+        System.out.println(numList);
+
         Collections.sort(numList);
         System.out.println(numList);
+        
         Collections.shuffle(numList);
         System.out.println(numList);
+        
+        // Integer[] numbers = (Integer[]) numList.toArray(); // java.lang.ClassCastException
+        // Integer[] numbers = numList.toArray(new Integer[0]); // okay
+        Integer[] numbers = numList.stream().toArray(i -> new Integer[i]); // better
+
+        Arrays.sort(numbers); // Arrays.sort() can only sort primitive/ref list
+        System.out.println(Arrays.toString(numbers));
     }
 }
