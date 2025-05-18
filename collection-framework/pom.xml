@@ -10,8 +10,8 @@
   
   <!-- # Java Version, JUnit5 Version, UTF-8 Encoding --> 
   <properties>
-    <maven.compiler.target>11</maven.compiler.target>
-    <maven.compiler.source>11</maven.compiler.source>
+    <maven.compiler.target>17</maven.compiler.target>
+    <maven.compiler.source>17</maven.compiler.source>
     <junit.jupiter.version>5.8.1</junit.jupiter.version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <!-- <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding> -->
@@ -28,32 +28,32 @@
             <version>3.0.0</version>
             <configuration>
                 <mainClass>com.zahid.Main</mainClass>
+
+                <!-- <mainClass>com.zahid.tweetcollection.Main</mainClass> -->
+                <!-- <mainClass>com.zahid.tweetnormal.Main</mainClass> -->
+                <!-- <mainClass>com.zahid.twitterapi.Main</mainClass> -->
                 
-                <mainClass>com.zahid.tweetcollection.Main</mainClass>
-                <mainClass>com.zahid.tweetnormal.Main</mainClass>
-                <mainClass>com.zahid.twitterapi.Main</mainClass>
+                <!-- <mainClass>com.zahid.collection.person.PersonPriorityQueue</mainClass> -->
+                <!-- <mainClass>com.zahid.collection.person.PersonTreeSet</mainClass> -->
+                <!-- <mainClass>com.zahid.collection.student.StudentListSort</mainClass> -->
                 
-                <mainClass>com.zahid.collection.person.PersonPriorityQueue</mainClass>
-                <mainClass>com.zahid.collection.person.PersonTreeSet</mainClass>
-                <mainClass>com.zahid.collection.student.StudentListSort</mainClass>
-                
-                <mainClass>com.zahid.collection.ArrayListDemo</mainClass>
-                <mainClass>com.zahid.collection.ArraySortExample</mainClass>
-                <mainClass>com.zahid.collection.BinarySearchExample</mainClass>
-                <mainClass>com.zahid.collection.HashSetExample</mainClass>
-                <mainClass>com.zahid.collection.HashMapExample</mainClass>
-                <mainClass>com.zahid.collection.TreeSetExample</mainClass>
-                <mainClass>com.zahid.collection.TreeMapExample</mainClass>
-                <mainClass>com.zahid.collection.LinkedHashSetExample</mainClass>
-                <mainClass>com.zahid.collection.LinkedListDemo</mainClass>
-                <mainClass>com.zahid.collection.ListExample</mainClass>
-                <mainClass>com.zahid.collection.ListConversion</mainClass>
-                <mainClass>com.zahid.collection.SetExample</mainClass>
-                <mainClass>com.zahid.collection.SortListExample</mainClass>
-                <mainClass>com.zahid.collection.SortPersonList</mainClass>
-                <mainClass>com.zahid.collection.VectorDemo</mainClass>
-                <mainClass>com.zahid.collection.StackDemo</mainClass>
-                <mainClass>com.zahid.collection.QueueTest</mainClass>
+                <!-- <mainClass>com.zahid.collection.ArrayListDemo</mainClass> -->
+                <!-- <mainClass>com.zahid.collection.ArraySortExample</mainClass> -->
+                <!-- <mainClass>com.zahid.collection.BinarySearchExample</mainClass> -->
+                <!-- <mainClass>com.zahid.collection.HashSetExample</mainClass> -->
+                <!-- <mainClass>com.zahid.collection.HashMapExample</mainClass> -->
+                <!-- <mainClass>com.zahid.collection.TreeSetExample</mainClass> -->
+                <!-- <mainClass>com.zahid.collection.TreeMapExample</mainClass> -->
+                <!-- <mainClass>com.zahid.collection.LinkedHashSetExample</mainClass> -->
+                <!-- <mainClass>com.zahid.collection.LinkedListDemo</mainClass> -->
+                <!-- <mainClass>com.zahid.collection.ListExample</mainClass> -->
+                <!-- <mainClass>com.zahid.collection.ListConversion</mainClass> -->
+                <!-- <mainClass>com.zahid.collection.SetExample</mainClass> -->
+                <!-- <mainClass>com.zahid.collection.SortListExample</mainClass> -->
+                <!-- <mainClass>com.zahid.collection.SortPersonList</mainClass> -->
+                <!-- <mainClass>com.zahid.collection.VectorDemo</mainClass> -->
+                <!-- <mainClass>com.zahid.collection.StackDemo</mainClass> -->
+                <!-- <mainClass>com.zahid.collection.QueueTest</mainClass> -->
               </configuration>
         </plugin>      
         
